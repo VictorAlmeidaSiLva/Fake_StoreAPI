@@ -3,6 +3,7 @@
         <li>
          {{ item.title }} {{ item.price }} 
        </li>
+       <img :src="item.image" alt="">
     </div>
 </template>
 
