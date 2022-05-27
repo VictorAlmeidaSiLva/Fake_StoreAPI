@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar  navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand">Logo</a>
         <form class="d-flex">
