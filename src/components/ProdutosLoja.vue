@@ -1,8 +1,10 @@
 <template>
   <div class="container-fluid">
     <div class="row" v-if="products">
-      <div class="card btn btn-primary" v-for="item in products" :key="item.id" :value="item.id">
-        <img :src="item.image" alt="" />
+      <div class="card" v-for="item in products" :key="item.id" :value="item.id">
+        <div class="imgProducts">
+          <img class="img" :src="item.image" alt="" />
+        </div>
         <div class="card-body">
           <p class="card-title"><span class="title">{{ item.title }}</span></p>
           <p class="card-text title">
@@ -39,11 +41,26 @@ onMounted(() => {
   border-radius: 5px;
   padding: 30px;
   margin: 30px;
-  width: 200px;
-  height: 600px;
+  width: 300px;
+  height: 500px;
   text-align: justify;
+;
 }
 .title {
   color: black;
 }
+
+.img {
+  padding: 0.5rem;
+  float: left;
+  width: 200px;
+  height: 200px;  
+  background-size: cover;
+}
+
+.imgProducts {
+  display: flex;
+  justify-content: center;
+}
+
 </style>
